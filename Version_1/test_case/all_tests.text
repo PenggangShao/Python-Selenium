@@ -1,0 +1,15 @@
+"Combine tests for gnosis.xml.objectify package (req 2.3+)" 
+import unittest,doctest
+import aem_asset,aem_login
+import HTMLTestRunner
+suite = doctest.DocTestSuite()
+suite.addTest(unittest.makeSuite(aem_asset.Asset))
+suite.addTest(unittest.makeSuite(aem_login.Login))
+filename = r"C:\Users\shaopenggang\Desktop\selenium\test_result\result.html"
+fp = file(filename,"wb")
+runner = HTMLTestRunner.HTMLTestRunner(
+stream=fp,
+title="Report_title",
+description="Report_description")
+runner.run(suite)
+#unittest.TextTestRunner(verbosity=2).run(suite)
