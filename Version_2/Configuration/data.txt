@@ -1,0 +1,5 @@
+#http://10.22.2.26:4502	admin	admin
+#http://10.22.2.26:4502	admin	admin
+#http://10.22.2.26:4502	admin	admin
+http://10.22.2.74:4502	admin	admin
+#http://10.22.2.26:4502	admin	admin
